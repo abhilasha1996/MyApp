@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload To Win</title>
+
+</head>
+<body>
+	<div class="main">
+            <h1>Upload To Win </h1>
+            <h3>Sign Up</h3>
+    </div>
+
+    <div>
+        <form method="post" enctype="multipart/form-data"  >
+            {% csrf_token %}
+
+            <div>
+                <label for="username">Username: </label>
+                <input id="username" type="text" name="username" >
+            </div>
+
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" type="text" name="name" >
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                <input id="email" type="text" name="email">
+            </div>
+
+            <div>
+                <label for="password">Password: </label>
+                <input id="password" type="password" name="password">
+            </div>
+                <input type="submit" value="Sign Up">
+        </form>
+
+
+    </div><br><br>
+    <div><h3>Already a user?</h3><a href="login.html">Login</a></div>
+    <div><h3>logout from the session</h3><a href="logout.html">Logout</a></div>
+
+</body>
+</html>
